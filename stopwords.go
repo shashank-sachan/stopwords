@@ -118,6 +118,8 @@ func Clean(content []byte, langCode string, cleanHTML bool) []byte {
 		content = removeStopWords(content, thai)
 	case "tr":
 		content = removeStopWords(content, turkish)
+	case "hi":
+		content = removeStopWords(content, hindi)
 	}
 
 	//Remove duplicated space characters
